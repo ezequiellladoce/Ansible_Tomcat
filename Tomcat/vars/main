@@ -1,0 +1,4 @@
+
+---
+JAVA_HOME: /usr/lib/jvm/default-java
+tomcat_ver: 9.0.16
