@@ -71,6 +71,13 @@
     dest: /etc/systemd/system/tomcat.service
   when: ansible_service_mgr == "systemd"
 
+- name: Copy warfile
+  copy:
+    src: /home/ANS/warfile/hello.war
+    dest: /usr/share/tomcat/webapps/hello.war
+    owner: tomcat
+    group: tomcat
+
 - name: Start and enable tomcat
   service:
     daemon_reload: yes
