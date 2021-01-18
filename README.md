@@ -184,7 +184,7 @@ En donde es la ruta al key pair de la instancia AWS EC2 en al que instalaremos T
 
  - Al ejecutar el playbook  obtenemos:
 
-
+https://github.com/ezequiellladoce/Ansible_Tomcat/issues/1#issue-788468883
 
  - Comprobamos que el servidor Tomcat funcione correctamente colocando en nuestro Web Browser la ip publica de nuestra instancia en el puerto 8080 Ej: http://18.191.179.14:8080/
 
