@@ -1,5 +1,5 @@
 # Automatización Ansible:
-# Despliegue de Webapp (archivo .war) en servidor Tomcat en EC2 Ubuntu 
+# Despliegue de Webapp (archivo .war) con Tomcat en EC2 Ubuntu 
 
 El objetivo de este repositorio es compartir una Automatización del despliegue de una **Webapp (archivo .war)** en un servidor **Tomcat**  instado en una Instancia **AWS EC2** con Sistema Operativo Ubuntu mediante **Ansible**.
 
@@ -28,13 +28,13 @@ Las partes principales de este Rol son las siguientes:
 
 - En el rol tasks definiremos:
 
- - Instalación de Paquetes de Update
- - Instalación de Dependencias
- - Instalacion de Java
- - Creación de Grupo y Usuario
- - Descarga y descompresión de Tomcat
- - Copia del archivo War
- - Inicio del servicio.
+  - Instalación de Paquetes de Update
+  - Instalación de Dependencias
+  - Instalacion de Java
+  - Creación de Grupo y Usuario
+  - Descarga y descompresión de Tomcat
+  - Copia del archivo War
+  - Inicio del servicio.
 
 ```
 ---
@@ -146,11 +146,14 @@ Las partes principales de este Rol son las siguientes:
   - En nuestro servidor Ansible Editamos el archivo de Ansible hosts:
   
 ```
+
   nano /etc/ansible/hosts
+  
 ```
   - Agregamos 
 
 ```
+
 [Tomcat-servers]
 18.191.141.29 # aca colocamos la ip de nuestro servidor destino 
 
@@ -159,19 +162,21 @@ Las partes principales de este Rol son las siguientes:
 
   - En nuestro servidor Ansible clonamos el repositorio:
 
-´´´
+```
+
 git clone https://github.com/ezequiellladoce/Ansible_Tomcat.git
 
-´´´
+```
+
 ### Ejecutamos el Playbook
 
-´´´
+```
 
 cd Ansible_Tomcat
 
 ansible-playbook setup.yml -u ubuntu --key-file /home/ubuntu/key/SRV2.pem
 
-´´´
+```
 
 En donde es la ruta al key pair de la instancia AWS EC2 en al que instalaremos Tomcat y desplegaremos el archivo War
 
