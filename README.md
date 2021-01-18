@@ -188,7 +188,7 @@ En donde es la ruta al key pair de la instancia AWS EC2 en al que instalaremos T
 
  - Comprobamos que el servidor Tomcat funcione correctamente colocando en nuestro Web Browser la ip publica de nuestra instancia en el puerto 8080 Ej: http://18.191.179.14:8080/
 
-
+![instalacionapache](https://user-images.githubusercontent.com/67485607/104951872-25e0de00-59a2-11eb-8e35-33f40ce22567.PNG)
 
  - Comprobamos que el archivo war se haya desplegado correctamente colocando en nuestro web browser la ip publica de nuestra instancia en el puerto 8080 agregando a la url /hello/index.jsp Ej:  http://18.191.179.14:8080/hello/index.jsp
 
