@@ -1,5 +1,5 @@
-# Automatización Ansible:
-# Despliegue de Webapp (archivo .war) con Tomcat en EC2 Ubuntu 
+# Automatización Ansible
+## Despliegue de Webapp (archivo .war) con Tomcat en EC2 Ubuntu 
 
 El objetivo de este repositorio es compartir una Automatización del despliegue de una **Webapp (archivo .war)** en un servidor **Tomcat**  instado en una Instancia **AWS EC2** con Sistema Operativo Ubuntu mediante **Ansible**.
 
@@ -193,6 +193,7 @@ En donde es la ruta al key pair de la instancia AWS EC2 en al que instalaremos T
  - Comprobamos que el archivo war se haya desplegado correctamente colocando en nuestro web browser la ip publica de nuestra instancia en el puerto 8080 agregando a la url /hello/index.jsp Ej:  http://18.191.179.14:8080/hello/index.jsp
 
 
+![helloword](https://user-images.githubusercontent.com/67485607/104952031-7b1cef80-59a2-11eb-8fe5-70cf25973df1.PNG)
 
 
 
