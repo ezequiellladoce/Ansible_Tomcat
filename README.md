@@ -1,4 +1,5 @@
-# Automatización Ansible: Despliegue de Webapp (archivo .war) en servidor Tomcat en EC2 Ubuntu 
+# Automatización Ansible:
+# Despliegue de Webapp (archivo .war) en servidor Tomcat en EC2 Ubuntu 
 
 El objetivo de este repositorio es compartir una Automatización del despliegue de una **Webapp (archivo .war)** en un servidor **Tomcat**  instado en una Instancia **AWS EC2** con Sistema Operativo Ubuntu mediante **Ansible**.
 
